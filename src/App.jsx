@@ -24,20 +24,14 @@ export default function App() {
 
   function updateNote(text) {
     setNotes((oldNotes) =>
-      oldNotes.map((oldNote) => {
-        return oldNote.id === currentNoteId
-          ? { ...oldNote, body: text }
-          : oldNote;
-      })
+      oldNotes.map((oldNote) =>
+        oldNote.id === currentNoteId ? { ...oldNote, body: text } : oldNote
+      )
     );
   }
 
   function findCurrentNote() {
-    return (
-      notes.find((note) => {
-        return note.id === currentNoteId;
-      }) || notes[0]
-    );
+    return notes.find((note) => note.id === currentNoteId) || notes[0];
   }
 
   return (
