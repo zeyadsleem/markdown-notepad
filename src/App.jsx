@@ -8,10 +8,6 @@ import 'react-mde/lib/styles/css/react-mde-all.css';
 import './index.css';
 
 export default function App() {
-  /**
-   * Challenge: When the user edits a note, reposition
-   * it in the list of notes to the top of the list
-   */
   const [notes, setNotes] = React.useState(
     () => JSON.parse(localStorage.getItem('notes')) || []
   );
@@ -46,6 +42,23 @@ export default function App() {
       }
       return newArray;
     });
+  }
+
+  /**
+   * Challenge: complete and implement the deleteNote function
+   *
+   * Hints:
+   * 1. What array method can be used to return a new
+   *    array that has filtered out an item based
+   *    on a condition?
+   * 2. Notice the parameters being based to the function
+   *    and think about how both of those parameters
+   *    can be passed in during the onClick event handler
+   */
+
+  function deleteNote(event, noteId) {
+    event.stopPropagation();
+    // Your code here
   }
 
   function findCurrentNote() {
