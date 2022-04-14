@@ -1,6 +1,6 @@
 {
-  "name": "tenzies-project",
-  "version": "0.0.0",
+  "name": "note-project",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -17,5 +17,9 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
     "vite": "^2.7.2"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/zeyadsleem/markdown-notepad.git",
+  "author": "zeyadsleem <zeyadsleem1@gmail.com>",
+  "license": "MIT"
 }
